@@ -103,12 +103,17 @@ body::before {
     position: relative;
 }
 
+.container--full-width {
+    max-width: none;
+    padding: 0;
+}
+
 /* Premium Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-lg) 0;
+    padding: var(--space-lg) var(--space-lg);
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -169,7 +174,7 @@ body::before {
 
 /* Hero Section */
 .hero {
-    padding: var(--space-3xl) 0;
+    padding: var(--space-3xl) var(--space-lg);
     text-align: center;
     position: relative;
 }
@@ -244,7 +249,7 @@ body::before {
 
 /* Main Content */
 .main-content {
-    padding: var(--space-3xl) 0;
+    padding: var(--space-3xl) var(--space-lg);
 }
 
 .workspace {
@@ -681,7 +686,7 @@ body::before {
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: var(--space-3xl) 0 var(--space-xl);
+    padding: var(--space-3xl) var(--space-lg) var(--space-xl);
     margin-top: var(--space-3xl);
 }
 
